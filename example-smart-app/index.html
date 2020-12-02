@@ -87,8 +87,8 @@
       extractData().then(
         //Display Patient Demographics and Observations if extractData was success
         function(p) {
-          drawVisualization(p);
-          //window.location.href = "https://paulw2017.isparkdt.com/_trunk2/web/?ridPatient=0000001936:00019:00000"
+          //drawVisualization(p);
+          window.location.href = "https://paulw2017.isparkdt.com/_trunk2/web/?PrimaryId=" + p.id;
         },
 
         //Display 'Failed to call FHIR Service' if extractData failed
